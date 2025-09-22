@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+.card {
+  @apply bg-neutral-900 rounded-2xl shadow p-4 border border-neutral-800;
+}
+.input {
+  @apply w-full rounded-xl bg-neutral-900 border border-neutral-800 px-3 py-2 outline-none;
+}
+.badge {
+  @apply inline-flex items-center text-xs px-2 py-1 rounded-full border border-neutral-700;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* === Footer glow animation === */
+@keyframes pulse-glow {
+  0%   { filter: drop-shadow(0 0 0.25rem rgba(96,165,250,0.7)); opacity: 0.95; }
+  50%  { filter: drop-shadow(0 0 0.8rem rgba(45,212,191,0.9)); opacity: 1; }
+  100% { filter: drop-shadow(0 0 0.25rem rgba(96,165,250,0.7)); opacity: 0.95; }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2.2s ease-in-out infinite;
+}
+
+@keyframes glow-golden {
+  0%, 100% { text-shadow: 0 0 4px #facc15, 0 0 8px #fbbf24; }
+  50%      { text-shadow: 0 0 8px #fde68a, 0 0 16px #facc15; }
+}
+.glow-hebrew {
+  animation: glow-golden 3s ease-in-out infinite;
+}
+
+
