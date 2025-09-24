@@ -3,7 +3,6 @@
 # 📖 Shomer OSINT
 
 Ferramenta de **coleta e análise de comentários públicos** voltada para estudos e monitoramento aberto (OSINT).
-Atualmente captura **comentários do Facebook** via **Selenium (Python/FastAPI)** e oferece uma **vitrine interativa** construída em **Next.js/React**.
 
 🔍 Permite:
 
